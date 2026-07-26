@@ -200,12 +200,11 @@
    :language 'odin
    :override t
    :feature 'type
-   `((struct_declaration (identifier) @font-lock-type-face)
+   '((struct_declaration (identifier) @font-lock-type-face)
      (type (identifier) @font-lock-type-face)
-     (const_declaration (identifier) @font-lock-type-face "::" (bit_set_type))
-     (enum_declaration (identifier) @font-lock-type-face)
-     (union_declaration (identifier) @font-lock-type-face)
-     (bit_field_declaration (identifier) @font-lock-type-face)
+     (const_declaration (identifier) @font-lock-type-face "::")
+     (enum_declaration (identifier) @font-lock-type-face "::")
+     (union_declaration (identifier) @font-lock-type-face "::")
      (type (field_type) @font-lock-type-face))
 
    :language 'odin
@@ -231,9 +230,9 @@
   "Font lock rules used by `odin-ts-mode`.")
 
 (defvar odin-ts-mode--font-lock-feature-list
-  '((comment string)
+  '((comment string function)
     (keyword type)
-    (builtin preproc escape-sequence literal constant function)
+    (builtin preproc escape-sequence literal constant)
     (operator punctuation variable namespace property))
   "Feature list used by `odin-ts-mode`.")
 
