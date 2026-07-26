@@ -270,7 +270,6 @@ PARENT should be a block_comment node."
      ((parent-is "enum_declaration")   parent-bol odin-ts-mode-indent-offset)
      ((parent-is "union_declaration")  parent-bol odin-ts-mode-indent-offset)
      ((parent-is "struct_declaration") parent-bol odin-ts-mode-indent-offset)
-     ((parent-is "procedure_declaration") parent-bol odin-ts-mode-indent-offset)
 
      ;; Anonymous struct and union types
      ((parent-is "union_type")         parent-bol odin-ts-mode-indent-offset)
