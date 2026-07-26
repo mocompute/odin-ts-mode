@@ -49,7 +49,6 @@
 ;;; Code:
 
 (require 'treesit)
-(require 'js)
 (require 'c-ts-common)
 
 (defgroup odin-ts nil
